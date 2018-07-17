@@ -1,0 +1,46 @@
+a{
+    font-size: 35px;
+}
+
+/*order : link, visited, hover, active*/
+
+/*
+a:link {
+    color:red;
+}
+
+a:visited{
+    color:green;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color:orchid;
+}*/
+
+a:link, a:visited{
+    background-color: hotpink;
+    color: white;
+    padding: 10px 25px;
+    text-align-last: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: aqua;
+}
+
+a: active{
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+

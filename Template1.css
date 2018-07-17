@@ -1,0 +1,37 @@
+body 
+{
+    background: url("images/Gym.jpeg")
+    no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Pangolin', cursive;
+/*    opacity: 0.8;*/
+    
+}
+
+
+div{
+   color: white;;
+    text-align:center;
+/*    border: 3px solid red;*/
+    width: 60%;
+    padding: 30px;
+    margin: 100px auto;
+/*    margin-top: 300px;*/
+}
+
+
+h1{
+    font-size: 3em;
+    color: orangered;
+}
+p{
+    font-size: 2em;
+    color: orangered;
+}
+button{
+    background: orangered;
+    padding: 20px;
+    color: antiquewhite;
+    border-radius: 10px;
+    
+}

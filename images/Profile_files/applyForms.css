@@ -1,0 +1,688 @@
+﻿/*°º¤ø,¸I¸,ø¤º°`°º¤ø,B¸,ø¤°º¤ø,¸M¸,ø¤º°`°º¤ø,¸
+
+
+  Licensed Materials - Property of IBM5725-N92© Copyright IBM Corp.
+  2014, 2017.US Government Users Restricted Rights- Use,
+  duplication or disclosure restricted by GSA ADP Schedule Contract  with IBM Corp.
+  
+
+°º¤ø,¸I¸,ø¤º°`°º¤ø,B¸,ø¤°º¤ø,¸M¸,ø¤º°`°º¤ø,¸*/
+
+.applyFlow {
+  /*
+    .autocomplete li {
+        background-color: white !important;
+    }
+    */
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  box-shadow: none;
+}
+@media all and (min-width: 100px) {
+  .applyFlow {
+    /*
+        .popover {
+            font-weight: 400 !important;
+        }
+
+        
+        .error {
+            color: #B94A48 !important;
+        }
+
+        span.error {
+            color: #00CC00;
+        }
+
+        .error-class {
+            color: #FF0000;
+        }
+
+        .valid-class {
+            color: #00CC00;
+        }
+        */
+  }
+  .applyFlow .tblGrid .gridRow {
+    color: Navy;
+    text-decoration: underline;
+  }
+  .applyFlow .tblGrid .ui-checkbox {
+    display: inline !important;
+  }
+  .applyFlow .ui-table-cell-label {
+    width: 80%;
+    margin-right: 0px !important;
+  }
+  .applyFlow .datefield .ui-controlgroup-controls div.ui-input-text {
+    display: none !important;
+  }
+  .applyFlow .autocomplete .ui-listview {
+    margin-top: 0%;
+    margin-left: 0% !important;
+    display: none;
+  }
+  .applyFlow .onErrorTurnRed {
+    display: inline;
+  }
+  .applyFlow .ui-legend-top-alligned {
+    margin-top: 0% !important;
+  }
+  .applyFlow .ui-no-legend {
+    display: none;
+  }
+  .applyFlow label,
+  .applyFlow legend {
+    word-wrap: break-word !important;
+    display: inline-block;
+  }
+  .applyFlow .ui-radio label,
+  .applyFlow .ui-checkbox label {
+    max-width: 85%;
+  }
+}
+.applyFlow .tblresponsive td {
+  font-weight: normal;
+}
+.applyFlow .tblresponsive thead th,
+.applyFlow .tblresponsive tbody tr:last-child {
+  border-bottom: 1px solid #d6d6d6;
+  /* non-RGBA fallback */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.applyFlow .tblresponsive tbody th,
+.applyFlow .tblresponsive tbody td {
+  border-bottom: 1px solid #e6e6e6;
+  /* non-RGBA fallback  */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.applyFlow .tblresponsive tbody tr:last-child th,
+.applyFlow .tblresponsive tbody tr:last-child td {
+  border-bottom: 0;
+}
+.applyFlow .tblresponsive tbody tr:nth-child(odd) td,
+.applyFlow .tblresponsive tbody tr:nth-child(odd) th {
+  background-color: #eeeeee;
+  /* non-RGBA fallback  */
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media (min-width: 900px) {
+  .applyFlow {
+    /* Show the table header rows and set all cells to display: table-cell */
+    /* Hide the labels in each cell */
+  }
+  .applyFlow .tblresponsive td,
+  .applyFlow .tblresponsive th,
+  .applyFlow .tblresponsive tbody th,
+  .applyFlow .tblresponsive tbody td,
+  .applyFlow .tblresponsive thead td,
+  .applyFlow .tblresponsive thead th {
+    display: table-cell;
+    margin: 0;
+  }
+  .applyFlow .tblresponsive td .ui-table-cell-label,
+  .applyFlow .tblresponsive th .ui-table-cell-label {
+    display: none;
+  }
+  .applyFlow .tblGrid .ui-checkbox {
+    display: block;
+  }
+}
+.applyFlow .ui-listview {
+  overflow: auto;
+  max-height: 300px;
+}
+.applyFlow .autocomplete .ui-listview {
+  position: absolute !important;
+  z-index: 10000;
+  overflow: auto;
+  max-height: 300px;
+  margin-left: 20px;
+  border: 1px solid;
+}
+.applyFlow div.sectionGroup textarea.ui-editor-enabled {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+.applyFlow .loading {
+  background-color: White;
+}
+.applyFlow textarea.ui-input-text,
+.applyFlow .ui-text-editor {
+  height: 150px !important;
+  -webkit-transition: height 200ms linear;
+  -moz-transition: height 200ms linear;
+  -o-transition: height 200ms linear;
+  transition: height 200ms linear;
+}
+.applyFlow .autocomplete li.ui-btn-active {
+  background: linear-gradient(#5393c5, #6facd5) repeat scroll 0 0 #5393c5 !important;
+  border: 1px solid #2373A5 !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  text-shadow: 0 1px 0 #3373A5 !important;
+}
+.applyFlow .autocomplete li.ui-btn-active a.ui-btn {
+  background: linear-gradient(#5393c5, #6facd5) repeat scroll 0 0 #5393c5 !important;
+  border: 1px solid #2373A5 !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  text-shadow: 0 1px 0 #3373A5 !important;
+}
+.applyFlow .autocomplete li a.ui-btn:hover {
+  background: linear-gradient(#5393c5, #6facd5) repeat scroll 0 0 #5393c5 !important;
+  border: 1px solid #2373A5 !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  text-shadow: 0 1px 0 #3373A5 !important;
+}
+.applyFlow .fieldcontain .ui-select .ui-icon-carat-d {
+  background: linear-gradient(#ffffff, #f1f1f1) repeat scroll 0 0 #f1f1f1;
+  border: 1px solid #CCCCCC;
+  color: #222222;
+  font-weight: 700;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+.applyFlow .autocomplete fieldset .ui-controlgroup-controls {
+  max-height: 100px !important;
+  overflow: auto;
+}
+.applyFlow .ui-text-editor {
+  overflow: auto;
+}
+.applyFlow div.ui-select > .ui-icon-carat-d:after {
+  color: Black;
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-top: 4px solid #000000;
+  height: 0;
+  width: 0;
+  margin-top: 0;
+}
+.applyFlow .fieldcontain .errorauto {
+  border-color: #B94A48 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset !important;
+}
+.applyFlow .fieldcontain .errorauto:focus {
+  border-color: #953B39 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #d59392 !important;
+}
+.applyFlow .icon-caret-down,
+.applyFlow .applyFlow .icon-remove {
+  /* margin-top:-18px!important;*/
+  background-color: transparent;
+  border: 0 none;
+  margin: -14px 0.3125em 0;
+  position: absolute;
+  left: 200px;
+  top: 80%;
+  text-decoration: none;
+  color: Black !important;
+}
+.applyFlow .icon-search {
+  background-color: transparent;
+  border: 0 none;
+  margin: -14px 0.3125em 0;
+  position: absolute;
+  top: 80%;
+  text-decoration: none;
+}
+.applyFlow .ui-input-search {
+  position: relative;
+}
+.applyFlow a.icon-caret-down:hover,
+.applyFlow a.icon-caret-down:visited {
+  text-decoration: none;
+}
+.applyFlow button.multiselect {
+  overflow: hidden !important;
+}
+.applyFlow .ui-autocomplete {
+  max-height: 300px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+  /* add padding to account for vertical scrollbar */
+}
+.applyFlow div.fieldcontain .ui-radio label.ui-btn-icon-left:after,
+.applyFlow div.fieldcontain .ui-radio label.ui-radio-on:after,
+.applyFlow div.fieldcontain .ui-checkbox label.ui-btn-icon-left:after,
+.applyFlow div.fieldcontain .ui-checkbox label.ui-checkbox-on:after {
+  background-color: White !important;
+  border-width: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+.applyFlow .ui-btn-icon-left:after {
+  background-color: #d8d8d8;
+}
+.applyFlow div.sectionGroup .ui-collapsible-content div.fieldcontain fieldset.cr .ui-controlgroup-controls div.ui-radio label,
+.applyFlow div.sectionGroup .ui-collapsible-content div.fieldcontain fieldset.cr .ui-controlgroup-controls div.ui-checkbox label {
+  border: 0 none white !important;
+}
+.applyFlow div.fieldcontain.multiple .ui-filterable .ui-checkbox label {
+  border: 1px solid white !important;
+  margin-left: 10px;
+  margin-top: 1px !important;
+  padding: 4px;
+}
+.applyFlow div.fieldcontain.multiple .ui-filterable .ui-checkbox {
+  left: 0em !important;
+}
+.applyFlow div.fieldcontain.multiple .ui-filterable .ui-controlgroup-controls {
+  background: none repeat scroll 0 0 #eff7ff !important;
+}
+.applyFlow div.sectionGroup .ui-collapsible-content div.fieldcontain fieldset.cr .ui-controlgroup-controls .ui-focus {
+  box-shadow: none !important;
+  border: 0 none white !important;
+}
+.applyFlow div.fieldcontain.multiple .ui-filterable .ui-checkbox label:hover {
+  background: none repeat scroll 0 0 #D9EDF7 !important;
+}
+.applyFlow div.sectionGroup .ui-collapsible-content div.fieldcontain fieldset.cr .ui-controlgroup-controls div.ui-radio label:hover,
+.applyFlow div.sectionGroup .ui-collapsible-content div.fieldcontain fieldset.cr .ui-controlgroup-controls div.ui-checkbox label:hover {
+  background: none repeat scroll 0 0 #D9EDF7 !important;
+}
+.applyFlow .ui-autocomplete-input {
+  overflow: hidden !important;
+}
+.applyFlow .multiselect {
+  text-align: left;
+}
+.applyFlow .multiselect b.caret {
+  position: absolute;
+  top: 0px;
+  right: 8px;
+}
+.applyFlow .multiselect-group {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.applyFlow span.multilabel {
+  height: 92% !important;
+  position: absolute;
+  right: 20px;
+  width: 25px !important;
+  background-color: #ffffff !important;
+  top: 1px;
+}
+.applyFlow button.multiselect {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border: 1px solid #cccccc;
+}
+.applyFlow .btn .caret {
+  margin-left: 0;
+  margin-top: 8px;
+}
+.applyFlow .caret {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #000000;
+  content: "";
+  display: inline-block;
+  height: 0;
+  vertical-align: top;
+  width: 0;
+}
+.applyFlow #editordialog.ui-widget-content,
+.applyFlow #popupDialog.ui-widget-content {
+  background: url("smoothness/images/ui-bg_inset-hard_100_fcfdfd_1x100.png") repeat-x scroll 50% bottom #fcfdfd !important;
+}
+.applyFlow .ui-dialog-titlebar-close {
+  visibility: hidden;
+}
+.applyFlow .multiselect-container {
+  min-width: 100% !important;
+}
+.applyFlow .hide-tooltip-text {
+  display: none;
+}
+.applyFlow .datefield select {
+  width: auto;
+}
+.applyFlow .ui-controlgroup-controls > label {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+.applyFlow .popinfo {
+  display: none;
+}
+.applyFlow .dattxt {
+  outline: none;
+  color: #FFFFFF;
+  border: 0px solid #000000;
+  position: relative;
+  z-index: 100000;
+  width: 2px;
+  display: none;
+}
+.applyFlow .SlectBox {
+  padding: 5px 8px;
+  width: 200px;
+}
+.applyFlow .SelectClass {
+  border: none;
+  box-sizing: border-box;
+  filter: alpha(opacity=0);
+  height: 100%;
+  khtml-opacity: 0;
+  left: 0px;
+  moz-box-sizing: border-box;
+  moz-opacity: 0;
+  ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  webkit-box-sizing: border-box;
+  width: 100%;
+  z-index: 1;
+}
+.applyFlow .multiselect > .optWrapper > .options > li label,
+.applyFlow .multiselect > .CaptionCont {
+  khtml-user-select: none;
+  moz-user-select: none;
+  o-user-select: none;
+  user-select: none;
+  webkit-user-select: none;
+}
+.applyFlow .multiselect {
+  display: inline-block;
+  outline: none;
+  position: relative;
+}
+.applyFlow .multiselect:focus > .CaptionCont,
+.applyFlow .multiselect:hover > .CaptionCont {
+  border-color: #7799D0;
+  box-shadow: 0px 0px 2px #7799D0;
+}
+.applyFlow .multiselect > .CaptionCont {
+  background-color: #fff;
+  border: 1px solid #A4A4A4;
+  border-radius: 2px;
+  margin: 0px;
+  min-height: 14px;
+  position: relative;
+}
+.applyFlow .multiselect > .CaptionCont > span {
+  cursor: default;
+  display: block;
+  overflow: hidden;
+  padding-right: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.applyFlow .multiselect > .CaptionCont > span.placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+.applyFlow .multiselect > .CaptionCont > label {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+}
+.applyFlow .multiselect > .CaptionCont > label > i {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wMdBhAJ/fwnjwAAAGFJREFUKM9jYBh+gBFKuzEwMKQwMDB8xaOWlYGB4T4DA0MrsuapDAwM//HgNwwMDDbYTJuGQ8MHBgYGJ1xOYGNgYJiBpuEpAwODHSF/siDZ+ISBgcGClEDqZ2Bg8B6CkQsAPRga0cpRtDEAAAAASUVORK5CYII=');
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  display: block;
+  height: 16px;
+  left: 0px;
+  margin: auto;
+  opacity: 0.8;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 16px;
+}
+.applyFlow .multiselect > .optWrapper {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);
+  box-sizing: border-box;
+  left: 0;
+  moz-box-sizing: border-box;
+  moz-transition: opacity 200ms ease-out, top 200ms ease-out, visibility 200ms ease-out;
+  ms-transition: opacity 200ms ease-out, top 200ms ease-out, visibility 200ms ease-out;
+  opacity: 0;
+  o-transition: opacity 200ms ease-out, top 200ms ease-out, visibility 200ms ease-out;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  transition: opacity 200ms ease-out, top 200ms ease-out, visibility 200ms ease-out;
+  visibility: hidden;
+  webkit-box-sizing: border-box;
+  webkit-transition: opacity 200ms ease-out, top 200ms ease-out, visibility 200ms ease-out;
+  width: 100%;
+  z-index: -100;
+}
+.applyFlow .multiselect > .optWrapper.open {
+  opacity: 1;
+  top: 35px;
+  visibility: visible;
+  z-index: 1000;
+}
+.applyFlow .multiselect > .optWrapper > .options {
+  border-radius: 2px;
+  display: block;
+  list-style: none;
+  margin: 0px;
+  max-height: 250px;
+  overflow: auto;
+  padding: 0px;
+}
+.applyFlow .multiselect > .optWrapper.isFloating > .options {
+  box-shadow: 0px 0px 100px #595959;
+  max-height: 100%;
+}
+.applyFlow .multiselect > .optWrapper > .options > li {
+  border-bottom: 1px solid #F3F3F3;
+  padding: 6px 6px;
+  position: relative;
+}
+.applyFlow .multiselect > .optWrapper > .options > li:first-child {
+  border-radius: 2px 2px 0px 0px;
+}
+.applyFlow .multiselect > .optWrapper > .options > li:last-child {
+  border-bottom: none;
+  border-radius: 0px 0px 2px 2px;
+}
+.applyFlow .multiselect > .optWrapper > .options > li:hover {
+  background-color: #E4E4E4;
+}
+.applyFlow .multiselect > .optWrapper > .options > li.sel {
+  background-color: #a1c0e4;
+}
+.applyFlow .multiselect > .optWrapper > .options > li label {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.applyFlow .multiselect > .optWrapper > .options > li > span {
+  display: none;
+}
+.applyFlow .multiselect > .optWrapper.isFloating {
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  max-height: 90%;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 90%;
+}
+.applyFlow .multiselect > .optWrapper > .options > li.disabled {
+  background-color: inherit;
+  pointer-events: none;
+}
+.applyFlow .multiselect > .optWrapper > .options > li.disabled * {
+  filter: alpha(opacity=50);
+  khtml-opacity: 0.5;
+  moz-opacity: 0.5;
+  ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  opacity: 0.5;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .options > li {
+  cursor: pointer;
+  padding-left: 35px;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .options > li > span,
+.applyFlow .multiselect .select-all > span {
+  bottom: 0px;
+  display: block;
+  margin-left: -35px;
+  position: absolute;
+  top: 0px;
+  width: 30px;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .options > li span i,
+.applyFlow .multiselect .select-all > span i {
+  background-color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 2px;
+  bottom: 0px;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+  height: 14px;
+  left: 0px;
+  margin: auto;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 14px;
+}
+.applyFlow .multiselect > .optWrapper > .MultiControls {
+  background-color: #fff;
+  border-radius: 0px 0px 3px 3px;
+  border-top: 1px solid #ddd;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.13);
+  display: none;
+}
+.applyFlow .multiselect > .optWrapper.multiple.isFloating > .MultiControls {
+  bottom: 0px;
+  display: block;
+  margin-top: 5px;
+  position: absolute;
+  width: 100%;
+}
+.applyFlow .multiselect > .optWrapper.multiple.okCancelInMulti > .MultiControls {
+  display: block;
+}
+.applyFlow .multiselect > .optWrapper.multiple.okCancelInMulti > .MultiControls > p {
+  padding: 6px;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .MultiControls > p {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px;
+  text-align: center;
+  width: 50%;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .MultiControls > p:hover {
+  background-color: #f1f1f1;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .MultiControls > p.btnOk {
+  border-radius: 0px 0px 0px 3px;
+  border-right: 1px solid #DBDBDB;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .MultiControls > p.btnCancel {
+  border-radius: 0px 0px 3px 0px;
+}
+.applyFlow .multiselect > .optWrapper.isFloating > .options > li {
+  padding: 12px 6px;
+}
+.applyFlow .multiselect > .optWrapper.multiple.isFloating > .options > li {
+  padding-left: 35px;
+}
+.applyFlow .multiselect > .optWrapper.multiple.isFloating {
+  padding-bottom: 43px;
+}
+.applyFlow .multiselect > .optWrapper.multiple > .options > li.selected span i,
+.applyFlow .multiselect .select-all.selected > span i,
+.applyFlow .multiselect .select-all.partial > span i {
+  background-color: gray;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAB2SURBVHjaAGkAlv8A3QDyAP0A/QD+Dam3W+kCAAD8APYAAgTVZaZCGwwA5wr0AvcA+Dh+7UX/x24AqK3Wg/8nt6w4/5q71wAAVP9g/7rTXf9n/+9N+AAAtpJa/zf/S//DhP8H/wAA4gzWj2P4lsf0JP0A/wADAHB0Ngka6UmKAAAAAElFTkSuQmCC"), linear-gradient(135deg, #b1b6be 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.multiselect.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.multiselect.disabled > .CaptionCont {
+  border-color: #ccc;
+  box-shadow: none;
+}
+.multiselect .select-all {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0px 0px;
+  height: 20px;
+  padding: 8px 0px 3px 35px;
+  position: relative;
+}
+.multiselect .select-all > span i {
+  cursor: pointer;
+}
+.multiselect .select-all.partial > span i {
+  background-color: #ccc;
+}
+.multiselect > .optWrapper > .options > li.optGroup {
+  padding-left: 5px;
+  text-decoration: underline;
+}
+.gridclickable,
+.innerGridColumns,
+.checkedBoxText {
+  padding: 10px;
+}
+.gridclickable {
+  margin-top: 10px;
+  border: 1px solid;
+}
+.innerGridColumns {
+  border-width: 0px 1px;
+  border-style: solid;
+}
+.innerGridColumns span.pseudocheckbox {
+  background-color: white;
+}
+.innerGridColumns:last-child {
+  border-bottom-width: 1px;
+}
+.innerGridColumns:hover {
+  background-color: #d7d7d7;
+}
+.checkedBoxText {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+}
+.applyFlow .layoutsection div.fieldcontain fieldset .gridLegend.noMargin,
+.applyFlow .layoutsection .fieldcontain.invalid fieldset.gridFieldSet {
+  margin: 0px;
+}
+/*# sourceMappingURL=applyForms.css.map */
+

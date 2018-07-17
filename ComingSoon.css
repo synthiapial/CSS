@@ -1,0 +1,31 @@
+body 
+{
+    background: url("images/Gym.jpeg")
+    no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Pangolin', cursive;
+    
+}
+
+div 
+{
+    background-color: #973722;
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 20px;
+}
+button{
+    background: black;
+    padding: 20px;
+    color:lightblue;
+    border-radius: 10px;
+    
+}
+
+h1{
+    font-size: 3em;
+}
+p{
+    font-size: 1.8em;
+}

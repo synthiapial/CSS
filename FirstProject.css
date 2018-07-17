@@ -1,0 +1,38 @@
+/*
+body {
+    background-color: gold;
+    background-image: url("images/twitterLogo.png")
+}
+*/
+
+body {
+    background: url("images/CatImage2.png")
+        no-repeat center center fixed;
+    background-size: cover;
+}
+
+div
+{
+    background-color: yellow;
+    
+}
+
+
+i{
+    color: #50AE54;
+}
+
+
+h1
+{
+    color: #50AE54;
+    text-align:center;
+/*    border: 3px solid red;*/
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 300px;
+/*    font-family: 'Ubuntu', sans-serif;*/
+font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
